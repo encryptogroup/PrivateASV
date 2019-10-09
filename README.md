@@ -32,7 +32,7 @@ This code requires all [ABY](https://github.com/encryptogroup/ABY) requirements 
 * For evaluating the biometric performance of the i-vector challenge data, the data has to be provided following way (in the build folder where the executables are):
   - Filename `referencesN`, where `N in {50, 100, 150, 200, 250, 400, 600}` denotes the dimension of the vector. Each line has to look like this: `speakerID,y[1] y[2] ... y[N]`, where `speakerID` is a string, and each `y[i]` is a 32-bit float.
   - Filename `probesN`, where `N in {50, 100, 150, 200, 250, 400, 600}` denotes the dimension of the vector. Each line has to look like this: `probeID,x[1] x[2] ... x[N]`, where `probeID` is a string, and each `x[i]` is a 32-bit float.
-  - Filename `comparisons` (can be specified via the `-f` flag) denotes which speakers shall be compared to which probes. Each line has to look like this: `speakerID,probeID`, where `speakerID` and `probeID` are strings.
+  - Filename `comparisons` (can be specified via the `-j` flag) denotes which speakers shall be compared to which probes. Each line has to look like this: `speakerID,probeID`, where `speakerID` and `probeID` are strings.
 * For PLDA/2Cov, additional model data has to be provided in the following way:
   - Non-centered PLDA/2Cov:
     - Filename `kN`, where `N in {50, 100, 150, 200, 250, 400, 600}`, provides one float value.
